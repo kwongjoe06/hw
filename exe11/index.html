@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html lang = "zh-CN">
+<html lang="en">
     <head>
-        <meta charset = "utf-8">
-        <title>exe08</title>
+        <meta charset="utf-8">
+        <title>exe11</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Honk&family=Tac+One&display=swap" rel="stylesheet">
+
+        <style>
+            .tac-one-regular {
+                font-family: "Tac One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .honk {
+                font-family: "Honk", system-ui;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-variation-settings:
+                "MORF" 15,
+                "SHLN" 50;
+            }
+        </style>
     </head>
     <body>
-        <table border="1">
-            <caption>table 01</caption><!--表格标题-->
-            <colgroup><!--表格样式-->
-                <col style="background-color: rgb(176, 233, 165);">
-                <col span="5" style="background-color: rgb(172, 198, 221);">
-            </colgroup>
-            <thead><!--表格header-->
-                <tr><th colspan="6">MY TIMETABLE</th></tr>
-            </thead>
-            <tbody><!--表格内容-->
-                <tr><td rowspan="6">Hours</td><td>Sun</td><td>Mon</td><td>Tue</td><td>Wed</td><td>Thu</td></tr>
-                <tr><td>Science</td><td>Maths</td><td>Science</td><td>Maths</td><td>Arts</td></tr>
-                <tr><td>Social</td><td>History</td><td>English</td><td>Social</td><td>Sports</td></tr>
-                <tr><td colspan="5">Lunch</td></tr>
-                <tr><td>Science</td><td>Maths</td><td>Science</td><td>Maths</td><td rowspan="2">Project</td></tr>
-                <tr><td>Social</td><td>History</td><td>English</td><td>Social</td></tr>
-            </tbody>
-            <tfoot>
-                <tr><td colspan="6">exe08</td></tr>
-            </tfoot>
-        </table>
+        <h1 class="tac-one-regular">Heading 01</h1>
+        <p class="honk">Lorem Ipsum</p>
     </body>
 </html>
