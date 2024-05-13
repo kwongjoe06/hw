@@ -1,23 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>exe13</title>
-    </head>
-    <body>
-        <h1>制作项目清单</h1>
 
-        <h2>项目符号清单</h2>
-        <ul>
+    </body>
+
+    <!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>exe13</title>
+    <style>
+        .list1 {
+            list-style: outside square;
+        }
+        .list2 {
+            list-style: inside decimal-leading-zero;
+        }
+
+        .list3 {
+            list-style:inside url(icon.png);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>制作项目清单</h1>
+    <h2>项目符号清单</h2>
+    <ul class="list1">
+        <li>list 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+    <hr>
+    <h2>有编号的项目清单</h2>
+        <ol class="list2">
             <li>List 1</li>
             <li>List 2</li>
-            <li>List 3</li>    
+            <li>List 3</li>
+        </ol>
+    <hr>
+    <h2>图片项目符号清单</h2>
+        <ul class="list3">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
         </ul>
-        <hr>
+    <hr>
+</body>
 
-        <h2>有编号的项目清单</h2>
-        <ol>
-            <01>List01</01>
-            <02>List02</02>
-            <03>List03</03>
-    </body>
+</html>
