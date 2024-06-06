@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多栏位版面</title>
+    <style>
+        /* 样式调整 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, aside, footer {
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        header, footer {
+            background-color: #f0f0f0;
+        }
+        nav, aside {
+            background-color: #e0e0e0;
+        }
+        /* 响应式设计 */
+        @media only screen and (min-width: 768px) {
+            /* 两列布局 */
+            main {
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+            }
+        }
+        @media only screen and (min-width: 1024px) {
+            /* 三列布局 */
+            main {
+                grid-template-columns: 1fr 2fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>网站标题</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">导航链接 1</a></li>
+            <li><a href="#">导航链接 2</a></li>
+            <li><a href="#">导航链接 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>左侧内容</h2>
+            <p>这里可以放置左侧的内容，如导航链接、广告等。</p>
+        </section>
+        <section>
+            <h2>主要内容</h2>
+            <p>这里可以放置主要的内容，如文章、图片轮播等。</p>
+        </section>
+        <aside>
+            <h2>右侧内容</h2>
+            <p>这里可以放置右侧的内容，如相关链接、广告等。</p>
+        </aside>
+    </main>
+    <footer>
+        <p>版权信息 © 2024</p>
+    </footer>
+</body>
+</html>
